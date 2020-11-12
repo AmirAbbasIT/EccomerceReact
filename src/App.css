@@ -1,3 +1,8 @@
+body{
+  box-sizing: border-box;
+  margin: 0px;
+  background-color:#f8f9fa !important;
+}
 .App {
   text-align: center;
 }
@@ -35,4 +40,140 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Navbar Designing */
+
+.navbar{
+  margin: 1px 20px;
+  font-size: 1.5rem;
+  background-color: white;
+
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.bg-light{
+  background-color: white;
+}
+.navbar .navbar-brand{
+  font-size: 2rem;
+  font-weight: 500;
+  font-style: italic;
+}
+.sidebar{
+  width: 350px;
+  position: fixed;
+  z-index: 10000;
+  border-right: 1px solid rgba(0,0,0,0.3);
+  height: 100%;
+  transition: all 0.8s;
+  transform: translateX(-400px);
+  text-align: center;
+  background-color:rgba(10, 10, 10,0.9);
+  color: white;
+  font-size: 1.6rem;
+}
+
+.sidebar.open{
+  transform: translateX(0px);
+}
+.sidebar h3{
+  padding: 25px 0px;
+  border-bottom: 1px solid black;
+}
+.sidebar ul{
+  text-align: left;
+  list-style: none;
+  text-decoration: none;
+}
+.sidebar ul li{
+  font-size: 1.4rem;
+  padding: 3px 0px;
+  border-bottom: 1px solid brown;
+}
+
+/* Product Design */
+.product{
+  margin: 20px 5px;
+  text-align: center;
+  width: 98%;
+}
+.card-body{
+  margin: 0px;
+  padding: 0px;
+}
+.product img{
+  object-fit:contain;
+  width: 90%;
+  margin: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  max-height: 200px;
+}
+.product .price{
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom:3px;
+}
+.product .title{
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: rgba(0,0,0,0.8);
+}
+.prduct-listing{
+  margin: 1px 20px;
+}
+
+/*Product Details Page...... */
+.detail-wrapper{
+  
+  position: fixed;
+  background-color: rgb(237, 212, 157);
+  height: 100vh;
+  width: 100%;
+}
+.detail-container{
+width: 90%;
+margin-left: auto;
+margin-right: auto;
+height: 80vh;
+margin-top: 2%;
+background-color: white;
+border: 1px solid whitesmoke;
+transition: all 0.6s;
+}
+.detail-container:hover{
+box-shadow: 2px 2px 5px  black;
+}
+
+.detail-container img{
+  padding: 80px 60px;
+  object-fit: contain;
+  height: 65vh;
+}
+.product-title{
+  text-align: center;
+  padding: 30px 0px;
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgba(0,0,0,0.8);
+}
+.product-description{
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: 600;
+  
+  color: gray;
+}
+.detail-container .cart-input{
+  width: 30%;
+  margin-bottom: 10px;
+}
+.detail-container .cart-input:focus{
+  border: none;
+}
+.detail-container .cart-btn{
+  color: white;
+  padding: 10px 30px;
+  background-color: rgb(191, 46, 121);
 }
